@@ -54,9 +54,9 @@ export default function Game() {
   const moves = history.map((squares, move) => {
     let description;
     if (move > 0) {
-      description = 'Go to move #' + move;
+      description = 'Vá para o movimento #' + move;
     } else {
-      description = 'Go to game start';
+      description = 'Volte para o começo do jogo';
     }
     return (
       <TouchableOpacity onPress={() => jumpTo(move)}>
@@ -114,7 +114,7 @@ const Board = ({ xIsNext, squares, onPlay, hist }) => {
   let status;
   let vitoria = 0;
   if (winner) {
-    status = 'Winner: ' + winner
+    status = 'Vencedor: ' + winner
     vitoria += 1
   }
   else if (hist.length === 10) {
