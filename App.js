@@ -121,7 +121,7 @@ const Board = ({ xIsNext, squares, onPlay, hist }) => {
     status = 'Deu Velha! (Empate)'
   }
   else {
-    status = 'Next player: ' + (xIsNext ? 'X' : 'O');
+    status = 'Próximo jogador: ' + (xIsNext ? 'X' : 'O');
   }
   return (
     <View style={styles.tela}>
